@@ -21,7 +21,7 @@ class sbNamespacedMemcacheCache extends sfMemcacheCache
       throw new sfInitializationException('You must have namespaced memcache installed and enabled to use sbNamespacedMemcacheCache class.');
     }
     
-    if(!$this->getOption('prefix'))
+    if(!$this->getOption('prefix') or $this->getOption('prefix') == '')
     {
       throw new sfInitializationException('You must set the prefix to be able to use sbNamespacedMemcacheCache');
     }
