@@ -6,7 +6,7 @@
 class sbNamespacedMemcacheCache extends sfMemcacheCache 
 {
   /**
-   * Override the initialize to use the NSMemcache class
+   * Override the initialize to use the sbNamespacedMemcache class
    * Will throw an error if the prefix option is not set
    * 
    * @param type $options
